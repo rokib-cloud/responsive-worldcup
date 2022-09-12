@@ -1,0 +1,227 @@
+/*---------------------------------------
+ common style or utilities
+ ---------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+h1 {
+    color: rgb(240, 248, 255);
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button {
+    height: 50px;
+    color: rgb(26, 29, 32);
+    background-color: red;
+    border-radius: 7px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+article {
+    margin-top: 10px;
+}
+
+footer {
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*------------------------------------------
+ top banner 
+ ------------------------------------------*/
+.top-banner {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.876);
+    margin: 50px 100px;
+    border-radius: 20px;
+    height: 600px;
+}
+
+.top-info,
+.top-img {
+    width: 100%;
+}
+
+.top-info {
+    margin-bottom: 20px;
+    margin-left: 100px;
+
+}
+
+.top-img img {
+    width: 75.6%;
+    height: auto;
+    margin-top: 31px;
+
+}
+
+.btn-icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* -------------------------------------------
+Contents 
+----------------------------------------------*/
+.contents {
+    margin: 50px 100px;
+    display: flex;
+
+}
+
+.side-bar {
+    background-color: rgba(0, 0, 0, 0.876);
+    width: 320px;
+    height: 340px;
+    border-radius: 12px;
+
+}
+
+.sidenav a {
+    padding: 20px 10px 20px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-left: 50px;
+    /* padding-left: 20px; */
+}
+
+.box {
+    width: 360px;
+    height: 370px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    /* overflow: hidden; */
+}
+
+.box img {
+    width: 100%;
+}
+
+article {
+    padding-left: 10px;
+}
+
+p.content-info {
+    color: black;
+    margin: 0;
+    padding: 5px;
+}
+
+article>.content-update img {
+    width: 30px;
+}
+
+.content-header {
+    border: 3px solid black;
+}
+
+.content-update {
+    display: flex;
+    padding: 10px, 20px;
+}
+
+.transfer-btn {
+    border: 2px solid lightgrey;
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    font-size: 15px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+
+.updater {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin-right: 20px;
+}
+
+/*----------------------------------------------- 
+footer
+----------------------------------------------- */
+/* .footer-heading,
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+} */
+/* upcoming Match */
+.flag {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/* responsive */
+@media (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-banner,
+    .contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:668px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-banner,
+    .contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
